@@ -3,7 +3,7 @@ import calendar
 from datetime import datetime
 
 def get_user_input():
-    expense_date_str = input("Enter the date of expense (DD-MM-YYYY): ")
+    expense_date_str = input("Enter the date of expense (MM-DD-YYYY): ")
     expense_date = datetime.strptime(expense_date_str, '%m-%d-%Y').date()
 
     expense_name = input("What would you like to name this expense as? ")
